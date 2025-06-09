@@ -5,10 +5,9 @@ body {
     color: #fff;
 }
 
-/* Header Styles */
 header {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    flex-wrap: wrap; 
     justify-content: space-between;
     align-items: center;
     background-color: #1a1a1a;
@@ -16,7 +15,7 @@ header {
 }
 
 header .logo {
-    flex: 1; /* Takes available space */
+    flex: 1;
 }
 
 header nav ul {
@@ -30,7 +29,6 @@ header nav a {
     text-decoration: none;
 }
 
-/* Search and Cart */
 .search-cart {
     display: flex;
     align-items: center;
@@ -56,7 +54,6 @@ header nav a {
     cursor: pointer;
 }
 
-/* Hero Section */
 .hero {
     background-image: url('hero-background.jpg');
     background-size: cover;
@@ -73,14 +70,12 @@ header nav a {
     border-radius: 10px;
 }
 
-/* Featured Products */
 .featured-products, .about, .skin-quiz, .benefits, .testimonials, .blog-highlights, .subscription {
     padding: 50px 20px;
     background-color: #2a2a2a;
     text-align: center;
 }
 
-/* Product Carousel */
 .product-carousel {
     display: flex;
     overflow-x: auto;
@@ -101,7 +96,6 @@ header nav a {
     height: auto; 
 }
 
-/* Icon Row */
 .icon-row {
     display: flex;
     justify-content: center;
@@ -109,12 +103,10 @@ header nav a {
     margin-top: 20px;
 }
 
-/* Benefits Section */
 .benefit {
     text-align: center;
 }
 
-/* Footer Styles */
 footer {
     padding: 20px;
     background-color: #1a1a1a;
@@ -132,7 +124,6 @@ footer {
     margin-top: 10px;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -140,35 +131,35 @@ footer {
     }
 
     header nav ul {
-        flex-direction: column; /* Stack menu items on small screens */
+        flex-direction: column;
         gap: 10px;
     }
 
     .product-carousel {
-        flex-direction: column; /* Stack products on small screens */
+        flex-direction: column; 
     }
 
     .product {
-        width: 100%; /* Full width for products on mobile */
+        width: 100%;
     }
 
     .hero-content {
-        padding: 20px; /* Adjust padding for smaller screens */
+        padding: 20px; 
     }
 }
 
 @media (max-width: 480px) {
     .cta-button {
-        width: 100%; /* Full-width buttons on mobile */
+        width: 100%; 
         padding: 15px;
     }
 
     header .search-cart {
-        flex-direction: column; /* Stack search and cart on mobile */
+        flex-direction: column;
         width: 100%;
     }
 
     .search-cart input {
-        width: 100%; /* Full width for input on mobile */
+        width: 100%;
     }
 }
